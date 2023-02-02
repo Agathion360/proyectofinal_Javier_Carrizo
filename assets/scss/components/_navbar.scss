@@ -1,0 +1,51 @@
+// logo navbar
+
+.navbar{
+
+    .navbar-brand {
+        img{
+            @extend %logo_navbar;
+        }
+    } 
+
+    ul{
+        li{
+            list-style: none;   
+            margin-left: 20px;
+            a{
+                text-decoration: none;
+                font-family: $font1;
+                color: $verde1;
+                font-size: 20px;
+            }
+            &:hover{
+                color: black;
+            }
+        }
+    }
+
+    .navbar-toggler{
+        border: none;
+    }
+    .logo_colapsado{
+        height: 70px;  
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar-brand img {
+      display: none;
+    }
+  }

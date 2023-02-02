@@ -1,0 +1,121 @@
+#carouselExample{
+    background-color: $bgc2;
+
+    .card-wrap{
+        display: flex;
+
+        .tarjta-body{
+            background-color: $bgc2;
+        }
+
+        .card{
+            margin: 0 0.5em;
+            width: calc(100/5);
+            background-color: $bgc2;
+            border: none;
+            width: 260px;
+
+            .card-title{
+                @extend %tarjetas-lower;
+            }
+            .card-title::selection{
+                @extend %txt-seleccion;
+            }
+
+
+            .card-text{
+                @extend %tarjetas-lower;
+            }
+            .card-text::selection{
+                @extend %txt-seleccion;
+            }
+
+
+            .precio{
+                font-weight: bold;
+                font-size: 24px;
+                text-align: center;
+                color: $verde2;
+            }
+            .precio::selection{
+                @extend %txt-seleccion;
+            }
+           
+            .btn-compra{
+                background-color: $bgc2;
+                color: $verde2;
+                border: 1px solid $verde2;
+                border-radius: 0;
+
+                &:hover{
+                    background-color: $verde2;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .carousel-control-prev, .carousel-control-next{
+        @extend %btn-carrusel;
+    }
+}
+
+
+#carouselExampleSmall{
+   
+        .tarjta-body{
+            background-color: $bgc2;
+        }
+
+        
+        .card{
+        
+            background-color: $bgc2;
+            border: none;
+            align-items: center;
+
+           
+            .card-title{
+                @extend %tarjetas-lower;
+            }
+            .card-title::selection{
+                @extend %txt-seleccion;
+            }
+
+
+            .card-text{
+                @extend %tarjetas-lower;
+            }
+            .card-text::selection{
+                @extend %txt-seleccion;
+            }
+
+
+            .precio{
+                font-weight: bold;
+                font-size: 24px;
+                text-align: center;
+                color: $verde2;
+            }
+            .precio::selection{
+                @extend %txt-seleccion;
+            }
+            
+        
+        .btn-compra{
+            background-color: $bgc2;
+            color: $verde2;
+            border: 1px solid $verde2;
+            border-radius: 0;
+
+            &:hover{
+                background-color: $verde2;
+                color: white;
+            }
+        }
+    }
+
+    .carousel-control-prev, .carousel-control-next{
+        @extend %btn-carrusel;
+    }
+}

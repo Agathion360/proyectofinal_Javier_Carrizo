@@ -1,0 +1,57 @@
+%logo_navbar{
+    width: 70px;
+    height: 90px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+%titulos-cards{
+    color: $verde2;
+    font-size: 28px;
+}
+
+%sub-cards{
+    font-size: 3rem;
+    font-family: $font3;
+}
+
+%text-cards{
+    font-size: 15px;
+    color: rgb(97 97 97);
+}
+
+%tarjetas-lower{
+    text-transform:lowercase;
+}
+
+%btn-carrusel{
+    background-color: rgba(108, 108, 110, 0.356);
+    height: 7vh;
+    width: 7vh;
+    border-radius: 50%;
+    top:50%
+}
+
+%txt-sesiones{
+    
+        font-family: $font2;
+        font-size: 24px;
+        font-weight: bolder;
+        color: $verde2;
+      
+}
+%btn-hover{
+    border: $verde1 solid 1px;
+    background-color: #eeeee3;
+    color: $verde1;
+}
+
+%p-footer{
+    font-family:$font1;
+    font-size: 18px;
+}
+
+%txt-seleccion{
+    background-color: $verde1;
+            color: white;
+}

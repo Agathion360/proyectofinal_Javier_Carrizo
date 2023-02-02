@@ -1,0 +1,44 @@
+.footer{
+    background-color: #606d47;
+    color: white;
+
+    .direccion{
+        padding: 20px;
+
+        p:nth-child(1){
+            @extend %p-footer;
+        }
+        p:nth-child(2),.direccion p:nth-child(3), .direccion p:nth-child(4){
+            font-family: Montserrat;
+            font-size: 15px;
+        }
+        i{
+            margin-right: 10px;
+        }
+
+    }
+
+    .redes{
+        padding: 20px;
+        
+        p{
+            @extend %p-footer;
+        }
+        ul{
+            list-style: none;
+            padding-left: 0;
+
+            li{
+                display: inline-block;
+
+                a{
+                    color: white;
+                    position: relative;
+                    font-size: 25px;
+                    text-decoration: none;
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+  } 

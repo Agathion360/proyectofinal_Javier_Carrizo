@@ -1,0 +1,113 @@
+.carrito {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    background-color: $bgc2;
+
+    .cabecera {
+        background-color: $bgc6;
+        color: $bgc7 ;
+
+    }
+
+    tbody {
+        .producto {
+            height: 120px;
+        }
+
+        td {
+            p {
+                font-family: $font2;
+            }
+
+            p::selection {
+                @extend %txt-seleccion;
+            }
+        }
+
+        td:nth-child(3),
+        td:nth-child(4),
+        td:nth-child(5) {
+            p {
+                font-size: 30px;
+            }
+
+            p::selection {
+                @extend %txt-seleccion;
+            }
+        }
+
+
+        td:nth-child(6) {
+            a {
+                font-size: 25px;
+                color: black;
+
+                &:hover {
+                    color: #d1082d;
+                }
+            }
+        }
+    }
+
+}
+
+.total_compra {
+    p {
+        font-family: $font1;
+        font-size: 30px;
+        font-weight: 400;
+
+        span {
+            font-weight: 600;
+        }
+
+        span::selection {
+            @extend %txt-seleccion;
+        }
+    }
+
+    p::selection {
+        @extend %txt-seleccion;
+
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        font-family: $font1;
+        font-size: 20px;
+        border: solid 1px $verde1;
+        color: $verde1;
+        background-color: $bgc1;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        padding: 20px;
+
+        &:hover {
+            border: none;
+            color: $bgc1 ;
+            background-color: $verde1;
+        }
+    }
+}
+
+@media (orientation:portrait) and (max-width: 820px) {
+
+    .carrito {
+        .cabecera {
+            th:nth-child(1) {
+                display: none;
+            }
+        }
+    }
+
+    tr {
+        td:nth-child(1) {
+            display: none;
+
+        }
+
+    }
+
+}
+

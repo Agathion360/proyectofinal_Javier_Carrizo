@@ -1,0 +1,22 @@
+@mixin btn-sesion{
+    
+    background-color: $bgc5;
+    padding: 15px 80px 15px 80px;
+    font-family: $font2;
+    color: white;
+    border-radius: 0;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+@mixin bg-sesion($alto){
+    background-color: #eeeee3;
+    height:$alto;
+    margin: 80px 0 120px 0; 
+}
+
+@mixin btn-575($alto){
+    text-decoration: none;
+    font-size: $alto;
+    color: $verde1;
+}

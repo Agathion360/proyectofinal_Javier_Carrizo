@@ -1,0 +1,206 @@
+.card1 {
+    border: none;
+    background-color:#eaeadc;
+    img {
+        width: 100%;
+    }
+
+    .presentacion {
+        background-color: #eaeadc !important;
+
+        h4 {
+            @extend %titulos-cards;
+        }
+
+        h4::selection {
+            @extend %txt-seleccion;
+        }
+
+        .subtitle {
+            @extend %sub-cards;
+        }
+
+        .subtitle::selection {
+            @extend %txt-seleccion;
+        }
+
+        .card-text {
+            @extend %text-cards;
+
+        }
+
+        .card-text::selection {
+            @extend %txt-seleccion;
+        }
+
+        .btn {
+            background-color: $bgc2;
+            color: $verde2;
+            border: 1px solid $verde2;
+            border-radius: 0px;
+            padding: 15px;
+
+            &:hover {
+                background-color: $verde2;
+                color: white;
+                border: none;
+            }
+        }
+
+    }
+}
+
+.card2 {
+    background-color: #eaeadc !important;
+    border: none;
+
+    img {
+        width: 100%;
+    }
+
+    .card-title {
+        @extend %titulos-cards;
+    }
+
+    .card-title::selection {
+        @extend %txt-seleccion;
+    }
+
+
+    .subtitle {
+        @extend %sub-cards;
+
+    }
+
+    .subtitle::selection {
+        @extend %txt-seleccion;
+    }
+
+
+    .card-text {
+        @extend %text-cards;
+    }
+
+    .card-text::selection {
+        @extend %txt-seleccion;
+    }
+}
+
+
+// pagina shop
+.productos {
+    border-radius: none;
+
+    .row {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+
+        .card {
+            background-color: $bgc2;
+            border: none;
+            border-radius: 0 !important;
+            height: 550px;
+            margin-bottom: 20px;
+
+        }
+
+        .card-img-top {
+            width: 70%;
+        }
+
+        .card-title {
+            font-family: $font3;
+            font-weight: bold;
+        }
+
+        .card-title::selection {
+            @extend %txt-seleccion;
+        }
+
+        .card-text::selection {
+            @extend %txt-seleccion;
+        }
+
+        .precio {
+            font-weight: bold;
+            font-size: 24px;
+            text-align: center;
+            color: $verde2;
+        }
+
+        .precio::selection {
+            @extend %txt-seleccion;
+        }
+
+        .btn-compra {
+            background-color: $bgc2;
+            color: $verde2;
+            border: 1px solid $verde2;
+            border-radius: 0;
+
+            &:hover {
+                background-color: $verde2;
+                color: white;
+            }
+        }
+    }
+
+}
+
+
+@media (orientation:portrait) and (max-width: 820px) {
+
+    .productos {
+        .row {
+            margin-top: 0;
+            margin-bottom: 0;
+
+            .card {
+
+                height: 600px;
+
+            }
+
+            .btn-compra {
+                margin-bottom: 40px;
+                border-radius: 0;
+            }
+
+
+
+        }
+    }
+}
+
+
+
+
+
+
+
+/* pagina quienes somos */
+
+
+.card-quienes {
+    background-color: #eaeadc;
+    margin-bottom: 80px;
+    border: 0;
+
+    .card-title {
+        @extend %titulos-cards;
+    }
+
+    .card-title::selection {
+        @extend %txt-seleccion;
+    }
+
+
+    .card-text {
+        @extend %text-cards;
+    }
+
+    .card-text::selection {
+        @extend %txt-seleccion;
+    }
+
+}
